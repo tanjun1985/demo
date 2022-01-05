@@ -1,0 +1,22 @@
+server:
+  port: 8088
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+
+  datasource:
+#    url: jdbc:mysql://15.78.117.199:3306/example
+    url: jdbc:mysql://192.168.31.46:3306/example
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  main:
+    banner-mode: console
+
+logging:
+  config: classpath:log-conf.xml
+
+amazon:
+  associateId: habuma-20
+  test: test111
